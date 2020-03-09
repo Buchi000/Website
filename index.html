@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mekides G.</title>
+   <link rel="icon" href="./asset/image/logo-finished.png">
 </head>
 <body>
     <!--lets start...  -->
@@ -11,12 +12,13 @@
     <!-- home is internal but if we use extrnal ural must write by starting htt[] -->
     <a href="index.html">home</a>
     <a href="contact.html">contact</a>
+    <a href="Gallery.html">Gallery</a>
 
 
     <hr>
     <table>
         <tr>
-            <td><img src="./asset/image/photo_2019-05-01_19-57-48.jpg" alt="mekides g prpfile picture"></td>
+            <td><img src="./asset/image/photo_2020-03-08_18-11-28.jpg" alt="mekides g prpfile picture"></td>
             <td><td><h1>mekides G.</h1>
                 <h3>student,addis ababa universty</h3></td></td>
         </tr>
@@ -30,22 +32,31 @@
     <p>my name is mekides getahun.i am web developer who has been working on java</p>
     <hr>
     <!-- list... -->
-   <h3>contact us...</h3>
-   <form action="mailto:se.mekides.getahun@gmail.com" method="POST">
-       <label for="fName">first name</label><input type="text" name="fName" id="fName">
-       <br>
-       <br>
-       <label for="lastname">LastName</label><input type="text" name="lastname" id="lastname">
-       <br>
-       <br>
+<form action="mailto:se.mekides.getahun@gmail.com" method="POST">  
+<table>
+    <tr>
+        <td>First name</td>
+        <td><input type="text" pattern="[A-Za-z]" title="use only letter"></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><input type="text" pattern="[A-Za-z]" title="use only letter"></td>
+    </tr>
+    <tr>
+        <td>email</td>
+        <td><input type="email" name="email" id="email1"></td>
+    </tr>
+    <tr>
+        <td>password</td>
+        <td><input type="password" name="password" id="password1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Eight or more characters and atlist one one  number and one uppercase and lowercase letter">></td>
+    </tr>
 
-       <label for="email1">email</label><input type="email" name="email" id="email1">
-       <br><br>
-       <label for="password1">password</label><input type="password" name="password" id="password1">
-       <br>
-       <br>
-      
-       
+</table>
+
+<br>
+<br>
+
+     
        where are you from:
        <select name="country" id="">
            <option value="af">Africa</option>
@@ -60,7 +71,7 @@
        <input type="submit" value="submit">
    </form>
 
-
+   <h3>contact us...</h3>
 
    <a href="http:www.Facebook.com" target="blank">facebook</a>
    <a href="http:www.Instagram.com">Instagram</a>
